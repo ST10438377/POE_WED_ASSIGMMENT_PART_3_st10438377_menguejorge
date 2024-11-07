@@ -1,0 +1,137 @@
+/* Importando a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Estilos Globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa; /* Cor de fundo clara e suave */
+    color: #333; /* Cor de texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho e Navegação */
+nav {
+    background-color: #4a90e2; /* Azul elegante */
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #d1e8ff; /* Azul claro para hover */
+}
+
+/* Estilos do Container Principal */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.container h2 {
+    color: #4a90e2;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.container p {
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Seção de Imagens */
+.image-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-section img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Botão de Rolar ao Topo */
+#scrollToTopBtn {
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Inicialmente escondido */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #357ab8;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
+
+/* Estilo de Link no Texto */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    nav {
+        padding: 1em;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    #scrollToTopBtn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+.news-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Ajuste conforme a largura do seu layout */
+    height: 300px; /* Altura das imagens */
+    position: relative;
+  }
+  
+  .news-container img {
+    flex-shrink: 0;
+    animation: slide 10s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

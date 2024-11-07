@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact_us.html">Contact</a>
+        <a href="donation.html">Donation</a>
+        <a href="News.html">News</a>
+    </nav>
+
+    <div class="container">
+        <h1>Donate to Help People</h1>
+        <p>Your generous donations help us provide food, clothes, services, and other essential needs for those in need. Please choose the type of donation and enter the amount you'd like to contribute.</p>
+
+        <div class="image-section">
+            <img src="_images/gallery_3_Donation.jpg" alt="People helping each other" width="500" height="300">
+           
+            <img src="_images/gallery_3_helping_people.jpg" alt="Donation items" width="500" height="300">
+        </div>
+
+        <form action="submit_donation.php" method="post">
+            <h3>Donation Details</h3>
+
+            <div>
+                <label for="donationType">Donation Type:</label>
+                <select id="donationType" name="donationType" required>
+                    <option value="food">Food</option>
+                    <option value="general">General Donation</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="donationAmount">Donation Amount ($):</label>
+                <input type="number" id="donationAmount" name="donationAmount" placeholder="Enter the donation amount" required>
+            </div>
+
+            <h3>Your Details</h3>
+
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" placeholder="Leave a message with your donation"></textarea>
+            </div>
+
+            <button type="submit">Submit Donation</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 LiveLife Foundation. All rights reserved.</p>
+    </div>
+    
+
+    <script>
+   
+        
+    </script>
+</body>
+
+</html>
